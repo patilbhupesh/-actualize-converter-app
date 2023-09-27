@@ -1,12 +1,16 @@
+// @ts-check
+
 /**
  * @type {import('next').NextConfig}
- */
+ **/
 const nextConfig = {
+  output: "export",
+
+  basePath: "/-actualize-converter-app",
+
   images: {
-    loader: "",
-    path: "",
+    unoptimized: true,
   },
-  assetPrefix: "./",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
