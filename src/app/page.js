@@ -45,7 +45,8 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-start justify-start p-10">
+    <main className="flex min-h-screen flex-col items-center justify-start p-10">
+      <h1 className="text-xl font-bold mb-2 mt-2">Length Converter App</h1>
       <div className=" w-[600px] text-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <form className="p-8 flex flex-col  justify-center items-start">
           <div className="w-full">
