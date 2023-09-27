@@ -1,13 +1,12 @@
-/** @type {import('next').NextConfig} */
-// config added for static site generation
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  reactStrictMode: true,
-  output: "export",
-  distDir: "dist",
-  trailingSlash: true,
   images: {
-    unoptimized: true,
+    loader: "",
+    path: "",
   },
+  assetPrefix: "./",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
