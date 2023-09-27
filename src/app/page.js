@@ -110,7 +110,15 @@ export default function Home() {
             Convert
           </button>
           {resultValue > 0 && (
-            <div className="text-lg font-semibold">Result : {resultValue}</div>
+            <>
+              <div className="text-lg font-semibold">
+                Result : {resultValue}
+              </div>
+              <div className="text-sm font-semibold text-gray-500 dark:text-gray-200">
+                {inputValue} {inputUnit}s are equal to {resultValue}{" "}
+                {outputUnit}s.
+              </div>
+            </>
           )}
         </form>
       </div>
