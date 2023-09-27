@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+// config added for static site generation
+const nextConfig = {
+  reactStrictMode: true,
+  output: "export",
+  distDir: "dist",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
